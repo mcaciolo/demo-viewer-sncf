@@ -1,0 +1,48 @@
+<!-- <nav id="pager_parts" aria-label="pager" class="pagination" style="display: none;"> -->
+<nav id="pager_parts" aria-label="pager" class="pagination">
+    <ul class="pager">
+        <li onclick="g_viewer.goToPreviousPart();"><a href="#"><i class="wb-icon-arrow-l"></i>Previous Model</a></li>
+        <li onclick="g_viewer.goToNextPart();"><a href="#">Next Model<i class="wb-icon-arrow-r"></i></a></li>
+    </ul>
+</nav>
+<nav aria-label="pager" class="pagination">
+    <ul class="pager">
+        <!-- <li id="button-run" style="display:none;"> -->
+        <li id="button-run">
+            <a href="#">Select<i class="wb-icon-arrow-r"></i></a>
+        </li>
+    </ul>
+</nav>
+<!-- <div id='canvas_container' style="height: 100%; width: 100%;"> -->
+<div id='canvas_container'>
+    <canvas id='canvas-element-id' width='480' height='400' oncontextmenu="return false;">
+        Your browser does not support the HTML5 canvas element.
+    </canvas>
+</div>
+
+<!-- <div id="select-container" style="width: 22%; position: absolute;"> -->
+<div id="select-container">
+    <div class="form-group">
+        <select id="selectGroups" class="form-control" style="font-size:12px !important" multiple size="10" onchange="onSelectGropus();">
+            <option selected="selected">IfcBuildingElementProxy</option>
+            <option selected="selected">IfcDoor</option>
+            <option selected="selected">IfcRailing</option>
+            <option selected="selected">IfcRoof</option>
+            <option selected="selected">IfcSlab</option>
+            <option selected="selected">IfcStairFlight</option>
+            <option selected="selected">IfcWallStandardCase</option>
+            <option selected="selected">IfcWindow</option>
+        </select>
+    </div>
+
+    <div>
+        <button id="selectAll" class="btn btn-default btn-sm" onclick="selectAllGroups();">Select all</button>
+    </div>
+</div>
+
+<!-- <div id='divURL' style="height: 20px; width: 50%; right: 0px; top: 0px; position: absolute; visibility: hidden; background-color: aliceblue;"> -->
+<div id='divURL'>
+    INFORMATION
+</div>
+
+<div id="busy-indicator"></div>
