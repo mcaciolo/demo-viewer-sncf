@@ -1,0 +1,217 @@
+@charset "UTF-8";
+
+html, body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+div#canvas_container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 10;
+}
+
+div#xcustom-div-a {
+    width: 100%;
+    height: 50px;
+    background: #ffffff;
+    box-shadow: 0 1px 2px #ffffff;
+    display: grid;
+    grid-area: div-a;
+    grid-template-columns: 350px calc(100% - 350px);
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "div-aa div-ab";
+
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 10;
+}
+
+div#xcustom-div-aa {
+    display: flex;
+    grid-area: div-aa;
+    background: #00486f;
+    text-align: center;
+}
+
+span#xcustom-span-aaa {
+    margin: auto;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+div#xcustom-div-ab {
+    padding: 5px;
+    grid-area: div-ab;
+}
+
+button#xcustom-btn-aba, button#xcustom-btn-abb {
+    height: 100%;
+    border: none;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+button#xcustom-btn-aba:hover, button#xcustom-btn-aba:focus,
+button#xcustom-btn-abb:hover, button#xcustom-btn-abb:focus {
+    outline: none;
+}
+
+div#xcustom-div-b {
+    width: 350px;
+    height: calc(100% - 50px);
+    background: #00486f;
+    border-top: 1px solid #ffffff;
+    opacity: 1;
+    display: grid;
+    grid-area: div-b;
+    grid-template-columns: 1fr;
+    grid-template-rows: calc(100% - 50px) 50px;
+    grid-template-areas:
+    "div-ba"
+    "div-bb";
+
+    top: 50px;
+    left: 0;
+    position: absolute;
+    z-index: 10;
+}
+
+div#xcustom-div-ba {
+    grid-area: div-ba;
+    padding-top: 10px;
+}
+
+div#xcustom-div-baa {
+    padding: 10px;
+}
+
+div#xcustom-div-baa {
+    text-align: center;
+}
+
+div#xcustom-div-bab {
+    padding: 10px;
+}
+
+div#xcustom-div-bab-select-container-a {
+    text-align: center;
+}
+
+div#xcuston-div-right-panel-btn {
+    text-align: center;
+	padding: 10px;
+}
+
+button#selectAll {
+    border: none;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+button#selectAll:hover, button#selectAll:focus {
+    outline: none;
+}
+
+div#xcustom-div-baba {
+    height: 100px;
+    border-radius: 5px;
+    background: #ffffff;
+}
+
+div#xcustom-div-babb {
+    height: 100px;
+    border-radius: 5px;
+    background: #ffffff;
+}
+
+div#xcustom-div-babc {
+    height: 100px;
+    border-radius: 5px;
+    background: #ffffff;
+}
+
+div#xcustom-div-bb {
+    padding: 5px;
+    display: flex;
+    grid-area: div-bb;
+}
+
+button#xcustom-btn-bba, button#xcustom-btn-bbb {
+    width: 125px;
+    height: 100%;
+    border: none;
+    overflow: hidden;
+    border-radius: 5px;
+    margin: auto;
+}
+
+button#xcustom-btn-bba:hover, button#xcustom-btn-bba:focus,
+button#xcustom-btn-bbb:hover, button#xcustom-btn-bbb:focus {
+    outline: none;
+}
+
+div#xcustom-div-right-panel {
+    width: 500px;
+    height: calc(100% - 50px);
+    background: #ffffff;
+    opacity: 1;
+    overflow: auto;
+    /* padding: 5px; */
+    border: 0.5px solid #00486f;
+    top: 50px;
+    left: calc(100% - 505px);
+    position: absolute;
+    z-index: 10;
+}
+
+li.tree {
+	list-style-type: none;
+}
+
+li.tree input {
+	opacity: 0;
+	cursor: pointer
+}
+
+li.tree input+ol>li {
+	display: none;
+}
+
+
+li.tree input:checked+ol>li {
+	display: block;
+}
+
+.tree label::before {
+  content: "\25B6";
+  color: black;
+  display: inline-block;
+  margin-right: 6px;
+}
+
+tbody.tree {
+	width: 300px;
+}
+
+th.xcustom-th-prop-grid {
+	width: 40%;
+}
+
+td.xcustom-td-prop-grid {
+	width: 60%;
+}
+
+nav#pager_parts {
+    position: static;
+    margin: 0;
+}
